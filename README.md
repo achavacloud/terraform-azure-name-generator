@@ -1,6 +1,6 @@
-## Terraform Azure Naming Convention Module
+## Terraform Name Generator Module
 
-This Terraform module enforces a standardized naming convention for Azure resources, ensuring consistency and clarity across all deployments.
+This Terraform module enforces a standardized naming convention for cloud resources, ensuring consistency and clarity across all deployments.
 
 ```hcl
 module "naming" {
@@ -27,7 +27,7 @@ output "resource_name" {
 
 #### Description:
 
-The module constructs a standardized name for Azure resources by concatenating the following components:
+The module constructs a standardized name for cloud resources by concatenating the following components:
 
 	1.org_prefix: An optional prefix representing the organization or company.
 	2.env: The environment, such as development, QA, or production.
