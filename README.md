@@ -37,15 +37,15 @@ The module constructs a standardized name for Azure resources by concatenating t
 
 The constructed name ensures consistency, readability, and adherence to Azure naming conventions, helping to manage resources across different projects and environments.
 
-Example Outputs
+Example Outputs:
 
 For the provided inputs:
 
-	•	org_prefix: corp
-	•	env: dev
-	•	project: hr
-	•	resource_type: rg
-	•	suffix: 001
+	1.org_prefix: corp
+	2.env: dev
+	3.project: hr
+	4.resource_type: rg
+	5.suffix: 001
 
 The resulting resource name would be:
 ```shell
@@ -56,7 +56,7 @@ This naming pattern helps maintain a clear and organized structure for resource 
 
 Notes
 
-	•	The module includes a null_resource with a local-exec provisioner to warn if the constructed name exceeds 80 characters, ensuring compliance with Azure’s naming restrictions.
-	•	A random_id resource is available to generate a unique identifier if a suffix is not provided, ensuring uniqueness in resource names.
+	•The module includes a null_resource with a local-exec provisioner to warn if the constructed name exceeds 80 characters, ensuring compliance with Azure’s naming restrictions.
+	•A random_id resource is available to generate a unique identifier if a suffix is not provided, ensuring uniqueness in resource names.
 
 This module is designed to be used as part of a larger Terraform infrastructure configuration, where consistent resource naming is crucial for management, monitoring, and operational efficiency.
